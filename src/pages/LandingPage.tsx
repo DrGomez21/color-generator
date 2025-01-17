@@ -21,15 +21,15 @@ export const LandingPage = () => {
       </div>
 
       <div className="flex justify-center mx-4 mt-8">
-        <div className="w-24 h-32 bg-[#669BBC] border-2 border-[#000000] rounded-[40px] shadow-[.3rem_.3rem_#121212]"></div>
-        <div className="w-24 h-32 bg-[#003049] border-2 border-[#000000] rounded-[40px] shadow-[.3rem_.3rem_#121212]"></div>
-        <div className="w-24 h-32 bg-[#FDF0D5] border-2 border-[#000000] rounded-[40px] shadow-[.3rem_.3rem_#121212]"></div>
-        <div className="w-24 h-32 bg-[#C1121F] border-2 border-[#000000] rounded-[40px] shadow-[.3rem_.3rem_#121212]"></div>
+        <div className="w-24 h-32 bg-[#669BBC] border-2 border-[#000000] rounded-[40px] shadow-[.3rem_.3rem_#000000]"></div>
+        <div className="w-24 h-32 bg-[#003049] border-2 border-[#000000] rounded-[40px] shadow-[.3rem_.3rem_#000000]"></div>
+        <div className="w-24 h-32 bg-[#FDF0D5] border-2 border-[#000000] rounded-[40px] shadow-[.3rem_.3rem_#000000]"></div>
+        <div className="w-24 h-32 bg-[#C1121F] border-2 border-[#000000] rounded-[40px] shadow-[.3rem_.3rem_#000000]"></div>
       </div>
 
       <div className="flex flex-col space-y-4 mx-4 mt-6">
-        <button className="bg-[#99FFCC] border-2 border-black text-[#000000] shadow-[.3rem_.3rem_#121212] w-full font-semibold text-xl px-4 py-2 rounded-lg hover:scale-95 hover:shadow-none transition duration-75">Empezar a crear</button>
-        <button className="bg-white border-2 border-black text-black shadow-[.3rem_.3rem_#121212] w-full font-semibold text-xl px-4 py-2 rounded-lg hover:scale-95 hover:shadow-none transition duration-75">Código en Github</button>
+        <button className="bg-[#99FFCC] border-2 border-black text-[#000000] shadow-[.3rem_.3rem_#121212] w-full font-semibold text-xl px-4 py-2 rounded-lg hover:scale-95 hover:shadow-none transition duration-100">Empezar a crear</button>
+        <button className="bg-white border-2 border-black text-black shadow-[.3rem_.3rem_#121212] w-full font-semibold text-xl px-4 py-2 rounded-lg hover:scale-95 hover:shadow-none transition duration-100">Código en Github</button>
       </div>
 
       <div className="flex flex-col space-y-4 mx-4 mt-6">
@@ -51,7 +51,7 @@ export const LandingPage = () => {
       </div>
 
       <footer className="flex justify-center mx-4 mt-8">
-        <span>Desarrollado con cariño @Godie.codes</span>
+        <span className="text-sm">Desarrollado con cariño ❤️ @Godie.codes</span>
       </footer>
     </>
   )
