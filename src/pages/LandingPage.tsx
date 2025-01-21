@@ -1,14 +1,6 @@
 
+import { Link } from "react-router-dom";
 import deviceFrame from "../assets/android-device.png";
-
-// Colores:
-// - Texto: #000000
-// - Bg: #F5F4F0
-// - Primary: #99FFCC
-// - Secondary: #ffffff
-// - Tierra: #FFCC99
-// - Rosa: #FF99CC
-// - Azul: #7BBBFF
 
 export const LandingPage = () => {
   return (
@@ -28,8 +20,10 @@ export const LandingPage = () => {
       </div>
 
       <div className="flex flex-col space-y-4 mx-4 mt-6">
-        <button className="bg-[#99FFCC] border-2 border-black text-[#000000] shadow-[.3rem_.3rem_#121212] w-full font-yeseva text-xl px-4 py-2 rounded-lg hover:scale-95 hover:shadow-none transition duration-100">Empezar a crear</button>
-        <button className="bg-white border-2 border-black text-black shadow-[.3rem_.3rem_#121212] w-full font-yeseva text-xl px-4 py-2 rounded-lg hover:scale-95 hover:shadow-none transition duration-100">Código en Github</button>
+        <Link to={'/creator'}>
+          <button className="bg-[#99FFCC] border-2 border-black text-[#000000] shadow-[.3rem_.3rem_#121212] w-full font-yeseva text-xl px-4 py-2 rounded-lg hover:scale-95 hover:shadow-none transition duration-100">Empezar a crear</button>
+        </Link>
+        <a href="https://github.com/DrGomez21/color-generator" target="_blank" className="bg-white border-2 text-center border-black text-black shadow-[.3rem_.3rem_#121212] w-full font-yeseva text-xl px-4 py-2 rounded-lg hover:scale-95 hover:shadow-none transition duration-100">Código en Github</a>
       </div>
 
       <div className="flex flex-col space-y-4 mx-4 mt-6">
