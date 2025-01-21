@@ -25,8 +25,8 @@ export const MuestraColor = ({ init, onColorChange }: MuestraColorProps) => {
   return (
     <div className='flex flex-col items-center space-y-4'>
       <div
-        className='flex flex-col items-center space-y-2 shadow-lg shadow-slate-400 w-fit h-fit p-4 rounded-lg 
-        hover:scale-105 transition duration-100'>
+        className='flex flex-col items-center space-y-2 w-fit h-fit p-4 rounded-lg 
+        hover:scale-105 bg-white transition duration-100 border-2 border-black shadow-[.3rem_.3rem_#000000]'>
         <div
           className='flex justify-center items-center w-24 h-24 rounded-md hover:cursor-pointer'
           style={{ backgroundColor: currentColor }}>
@@ -54,7 +54,7 @@ export const MuestraColor = ({ init, onColorChange }: MuestraColorProps) => {
       {showPicker && (
         <div className='absolute top-64' style={{ zIndex: 10 }}>
           <SketchPicker
-            className='shadow-lg shadow-slate-400 rounded-lg'
+            className='border-2 border-black rounded-lg'
             color={currentColor}
             onChange={handleOnChange}
           />
