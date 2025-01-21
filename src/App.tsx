@@ -1,15 +1,20 @@
 import { Toaster } from 'react-hot-toast';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { LandingPage } from './pages/LandingPage';
+import { CreadorPaletas } from './pages/CreadorPaletas';
 
 function App() {
 
-
   return (
-    <div className='h-screen'>
-      <LandingPage />
 
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<LandingPage />} />
+        <Route path='/creator' element={< CreadorPaletas/>} />
+      </Routes>
+    
       <div><Toaster /></div>
-    </div>
+    </BrowserRouter>
   )
 }
 
